@@ -1,0 +1,359 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+body{
+    margin: 0;
+    
+  }
+nav{
+    background: #000;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+  }
+  
+  .mlogo{
+    margin: 10px;
+  }
+  
+  .nav-link{
+    text-decoration: none;
+    color: white;
+    margin: 0 10px;
+    font-family: sans-serif;
+
+  }
+
+  a:hover{
+    
+    text-decoration:underline ;
+   
+    
+  }
+  h1{
+    letter-spacing: -1px;
+  }
+  h2{
+    color: black;
+    font-family:  Helvetica;
+    font-size: 37px;
+  }
+
+  .orta{
+   width: 960px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 80px;
+  margin-top: 48px;
+ 
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 1000px;
+  }
+  .foto{
+
+    border-radius: 30px;
+  }
+  p{
+    font-size: 22px;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+  }
+h2{
+  background-color: white ;
+}
+.orta-1-link{
+
+    text-decoration: none;
+    color: white;
+    font-size: 30px;
+    
+  }
+  
+  .alt-başlık{
+    display: block;
+    margin-left: 220px;
+    margin-top: 20px;
+    
+  }
+  
+  
+  .orta-2 h2{
+    color: rgb(223, 26, 26);
+  }
+.more-link{
+  display: flex;
+  justify-content: center;
+  border-radius: 30px;
+  align-items: center;
+  background: #000;
+ width: 1000px;
+  height: 70px;
+margin: 0 auto;
+}
+
+.uclu-bilgi{
+  display: flex;
+  justify-content: space-around;
+  width: 1000px;
+}
+
+.bilgi{
+  padding: 24px;
+      border-radius: 12px;
+      box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.07);
+  margin: 3px 5px;
+  width: 300px;
+}
+
+.bilgi-baslik{
+  font-size: 35px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 16px;
+  margin: 16px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 12px;
+}
+
+.card-info {
+  margin-bottom: 12px;
+}
+
+.card-price-btn {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  text-align: center;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+.card-info ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.card-info li {
+  margin-bottom: 8px;}
+  
+  footer {
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+.sag-reklam {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.sag-reklam img {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.sag-reklam p {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.sag-reklam .reklam-link {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #000;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+.sag-reklam .reklam-link:hover {
+  background-color: #333;
+}
+
+.cart-dropdown {
+  position: relative;
+}
+
+.cart-content {
+  display: none;
+  position: absolute;
+  top: 60px;
+
+  background-color: white;
+  border: 1px solid #ccc;
+  min-width: 300px;
+  z-index: 1;
+}
+
+
+.cart-content .cart-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.cart-content .cart-item:last-child {
+  border-bottom: none;
+}
+
+.cart-content img.car-image {
+  width: auto; /* Let the browser calculate the width */
+  height: 100px; /* Set a fixed height */
+  margin-right: 10px;
+  border-radius: 5px;
+}
+
+.cart-total {
+  padding: 10px;
+  font-weight: bold;
+}
+
+.finish-shopping-button {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  cursor: pointer;
+}
+
+.finish-shopping-button:hover {
+  background-color: #0056b3;
+}
+
+.cart-button {
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.add-to-cart {
+  background-color: #28a745; /* Green color */
+  color: white; /* Text color */
+  border: none;
+  padding: 5px 10px; /* Add padding for better appearance */
+  border-radius: 3px; /* Add rounded corners */
+  cursor: pointer;
+}
+.delete-button {
+  background-color: #dc3545; /* Red color */
+  color: white; /* Text color */
+  border: none;
+  padding: 5px 10px; /* Add padding for better appearance */
+  border-radius: 3px; /* Add rounded corners */
+  cursor: pointer;
+}
+
+.payment-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.payment-content {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+
+.payment-dropdown {
+  position: absolute;
+  top: 100%;
+  right: 0;
+}
+
+.payment-content {
+  background-color: white;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px; /* Set to match the width of the cart dropdown */
+  z-index: 1;
+}
+
+
+.payment-content h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.payment-form {
+  margin-bottom: 20px;
+}
+
+.payment-form input {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.payment-form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.payment-form button:hover {
+  background-color: #0056b3;
+}
+
+.slider {
+ 
+  position: fixed;
+ 
+  top: 90px;
+  left: 15px;
+  width: 410px ; /*300px Adjust width as needed */
+  height: 1000px; /* Adjust height as needed */
+  overflow: hidden; /* Hide overflow */
+  /* Add other styles for the slider */
+  border-radius: 5px;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.5s ease; /* Smooth sliding transition */
+}
+
+.slides img {
+  width: 500px;
+  height: 800%;
+}
+
+.slide {
+  flex: 0 0 auto;
+}

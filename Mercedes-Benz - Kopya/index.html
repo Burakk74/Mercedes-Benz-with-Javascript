@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="style.css">
+  <title>Mercedes Benz</title>
+</head>
+
+<body>
+  <nav>
+    <div class="logo">
+      <img src="Mercedes-Logo.svg.png" alt="" class="mlogo" width="60">
+    </div>
+    <div class="links">
+      <a href="" class="nav-link">Anasayfa</a>
+      <a href="https://www.mercedes-benz.com.tr/" class="nav-link">Hakkında</a>
+      <a href="https://www.mercedes-benz.com.tr/passengercars/services.html" class="nav-link">Servis</a>
+      <a href="#uclu-bilgi" class="nav-link">Modeller</a>
+
+    </div>
+    <div class="cart-dropdown">
+      <div class="cart-button" onclick="toggleCart()">
+        <i class="fa fa-shopping-cart"></i>
+      </div>
+      <div class="cart-content" id="cartContent">
+        <!-- Cart content goes here -->
+        <div class="cart-total">
+          Total: <span id="cartTotal">0₺</span>
+        </div>
+        <button class="finish-shopping-button" onclick="finishShopping()">Alışverişi Tamamla</button>
+      </div>
+    </div>
+    <div class="payment-dropdown" id="paymentDropdown" style="display: none;">
+      <div class="payment-content">
+        <span class="close-button" onclick="closePayment()">×</span>
+        <h2>Ödeme işlemleri</h2>
+        <div class="payment-form">
+          <input type="text" placeholder="Kart Numarası">
+          <input type="text" placeholder="Son Kullanma Tarihi">
+          <input type="text" placeholder="CVV">
+          <input type="text" class= 'total-price'value="Total: 0₺" readonly>
+          <button class="finish-payment-button" onclick="finishPayment()">Ödemeyi Tamamla</button>
+        </div>
+      </div>
+    </div>
+
+    </div>
+  </nav>
+
+  <div class="slider">
+    <div class="slides">
+    <img src="banner1.png" alt="Photo 1" width="700" height="1200">
+    <img src="banner2.png" alt="Photo 2" width="1000" height="1200">
+    <img src="banner3.png" alt="Photo 3" width="700" height="1200">
+  </div>
+  </div>
+
+  <div class="orta ">
+    <div class="orta-yazı">
+      <h2>
+        Yeni Mercedes-AMG ile dünyayı keşfet
+      </h2>
+      <p>
+        Mercedes-AMG model ailesinin dört kapılı aracı başka bir boyutta, her zamankinden daha iyi bir sürüş deneyimi
+        sunar.
+
+      </p>
+
+    </div>
+
+
+    <img class=" foto" src="mercedes-beygir-gucu.jpg" alt="" width="600" height="300">
+
+  </div>
+  <br>
+  <div class="more-link">
+    <a class="orta-1-link" href="">Daha fazlasını keşfet</a>
+
+  </div>
+  <div class="orta ">
+    <img class=" foto" src="MB_Yeni_S_Serisi.jpg" alt="içmekan" height="250" width="500">
+
+    <div class="orta-yazı">
+      <h2>
+        Gelişmiş ve ileri teknoloji iç mekan
+      </h2>
+      <p>
+        Mercedes'in özgün iç mekan tasarımı, sofistike detaylar, kaliteli malzemeler ve yenilikçi teknolojilerle
+        buluşarak, sürücü ve yolculara unutulmaz bir lüks ve konfor deneyimi sunuyor.
+
+      </p>
+    </div>
+
+
+
+  </div>
+
+
+
+
+
+
+
+
+
+  <div class="orta" >
+    <img class=" foto" src="mercedes-benz-vision-avtr-concept-elektrikli-otonom-otomobil-bigumigu-6-e1578384538717.jpeg"
+      alt="elektrikli araç" width="1000" height="450">
+    <br>
+    <h2 class="alt-başlık"> Elektrikli geleceğe giden üç yol</h2>
+  </div>
+  <div class="orta" style="margin-top: 50px;">
+    <div class="uclu-bilgi">
+      <div class="bilgi">
+        <h4 class="bilgi-baslik">Tamamen elektrikli.</h4>
+        <p>
+          Tamamen elektrikli mobilite, sürüş sırasında sıfır CO2 emisyonu, neredeyse sessiz ilerleme ve otomobilin tork gücünden doğrudan yanıt alma anlamına gelir. Mercedes-Benz’in tamamen elektrikli otomobilleriyle tamamen yeni bir sürüş hissini ve geleceğe yön veren mobilite formunu deneyimleyin.</p>
+      </div>
+      <div class="bilgi">
+        <h4 class="bilgi-baslik">Plug-in hibrit:</h4>
+        <p>
+          Elektrikli ve içten yanmalı motor, mükemmel bir şekilde birleşti.
+          
+          Hibrit tahrik sistemlerimiz, elektrikli bir motorun dinamizmini ve verimliliğini, içten yanmalı motorun menzili ile birleştirir. Hibrit modeller, evde ve halka açık şarj istasyonlarında şarj edilebilir. Bazı modeller, halihazırda 100 km’ye kadar sadece elektrikli menzil sunar (WLTP).</p>
+      </div>
+      <div class="bilgi">
+        <h4 class="bilgi-baslik">Mild hybrid:</h4>
+        <p>Mild hybrid:
+          Hissedilebilir takviye efektine sahip akıllı verimlilik.
+          
+          Hafif hibritte, geleneksel içten yanmalı motorlar entegre bir marş motoru alternatörü (ISG) ile donatılır. Bu alternatörde; süzülme, takviye efekti veya reküperasyon gibi fonksiyonları sağlayan ve böylelikle önemli ölçüde tüketim tasarrufu yapabilen 48 voltluk elektrik sistemi mevcuttur.</p>
+      </div>
+      
+    </div>
+
+  </div>
+  <div class="orta">
+
+    <h2 >Öne Çıkan Modellerimiz</h2>
+  </div>
+  <div class="orta">
+    <div class="uclu-bilgi" id="uclu-bilgi">
+
+      <div class="card">
+        <img src="glc-coupe-segment_v2.png" alt="Mercedes Image">
+        <div class="card-info">
+            <p>GLC Coupe</p>
+            <ul>
+               
+                <li>Yüksek performanslı motor</li>
+                <li>Akıllı iç mekan teknolojileri</li>
+                <li>Minimum Karbon salınımı</li>
+            </ul>
+        </div>
+        <p  class="card-price-btn">5.600.000₺</p>
+          <button class="add-to-cart" onclick="addToCart('GLC Coupe', 5600000, 'glc-coupe-segment_v2.png')" data-car="GLC Coupe" data-price="5600000">Sepete Ekle</button>
+    </div>
+    <div class="card">
+      <img src="a_sedan_1 yeni.png" alt="Mercedes Image">
+      <div class="card-info">
+          <p>A Class</p>
+          <ul>
+              <li>Bütçe dostu fiyat</li>
+              <li>Düşük yakıt tüketimi </li>
+              <li>Geniş iç hacim</li>
+          </ul>
+      </div>
+      <p  class="card-price-btn">1.200.000₺</p>
+        <button class="add-to-cart" onclick="addToCart('A Class', 1200000, 'a_sedan_1 yeni.png')" data-car="A Class" data-price="1200000">Sepete Ekle</button>
+  </div>
+  <div class="card">
+    <img src="gcalssmerco.png" alt="Mercedes Image">
+    <div class="card-info">
+        <p> G Class</p>
+        <ul>
+            <li>4 x 4</li>
+            <li>Yüksek Tork Ve Beygir Gücü</li>
+            <li>Güvenlik odaklı sürüş deneyimi</li>
+        </ul>
+    </div>
+    <p  class="card-price-btn">7.250.000₺</p>
+    <button class="add-to-cart" onclick="addToCart('G Class', 7250000, 'gcalssmerco.png' )" data-car="G Class" data-price="7250000">Sepete Ekle</button>
+  </div>
+    </div>
+  </div>
+  </div>
+  <div class="sag-reklam" id="sagReklam">
+    <!-- Reklam içeriği buraya gelecek -->
+</div>
+
+  <footer>
+    &copy; 2024 Mercedes-Benz. All Rights Reserved.
+</footer>
+<script src="javascript.js"></script>
+</body>
+
+</html>
